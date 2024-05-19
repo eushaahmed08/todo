@@ -5,14 +5,17 @@ body {
     align-items: center;
     height: 100vh;
     margin: 0;
-    background-color: #051827;
+    background-image: url('images.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
 }
 
 .container {
-    background: #8eaebb;
+    background: rgba(142, 174, 187, 0.9); /* Adds transparency to see the background image */
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 20 20px rgba(0, 0, 0, 500);
     width: 100%;
     max-width: 400px;
     text-align: center;
@@ -70,10 +73,17 @@ h1 {
 }
 
 .task-item button {
-    background: none;
+    background: #28a745;
     border: none;
-    color: #dc3545;
+    color: #fff;
     cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.task-item button:hover {
+    background-color: #218838;
 }
 
 .subtask-item {
@@ -90,6 +100,20 @@ h1 {
 .subtask-item.completed span {
     text-decoration: line-through;
     color: #888;
+}
+
+.subtask-item button {
+    background: #ffc107;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    padding: 3px 8px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.subtask-item button:hover {
+    background-color: #e0a800;
 }
 
 .progress-bar-container {
